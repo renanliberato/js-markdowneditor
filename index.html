@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+        <link rel="stylesheet" href="./css/index.css" />
+        <title>Markdown editor</title>
+    </head>
+    <body>
+        <header>
+            <h1>Markdown editor</h1>
+        </header>
+        <div id="app">
+            <aside>
+                <button id="btn-open">Open file</button>
+                <p style="display: none;" id="opened-filename"></p>
+                <button style="display: none;" id="btn-save">Save file</button>
+            </aside>
+            <main>
+                <div id="editor-container">
+                    <textarea id="textarea-editor"># Hello World</textarea>
+                </div>
+                <div id="preview">
+
+                </div>
+            </main>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src="./src/index.js"></script>
+    </body>
+</html>
